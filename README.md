@@ -1,4 +1,3 @@
-```markdown
 # API de Acervo de Sacolas
 
 API para gerenciamento de sacolas de supermercado.
@@ -45,13 +44,12 @@ cd api-flask-flasgger
 ```bash
 docker-compose up -d
 ```
-
 ### 3. Configure o arquivo .env
 
-Crie `apps/backend/.env`:
+Crie `apps/backend/.env` a partir do exemplo:
 
-```
-DATABASE_URL=postgresql://devuser:devpassword@localhost:5432/sacolas
+```bash
+cp apps/backend/.env.example apps/backend/.env
 ```
 
 ### 4. Instale as dependências e execute as migrations
